@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="user" action="send.php" method="post">
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="user_name">Your name:</label>
+        <input
+          type="text"
+          name="user_name"
+          placeholder="Your name"
+          id="user_name"
+          required="true"
+        />
+        <br />
+        <br />
+        <label for="user_age">Your age</label>
+        <input
+          type="number"
+          name="user_age"
+          id="user_age"
+          placeholder="Your age"
+        />
+      </fieldset>
+      <br />
+      <br />
+      <label for="password">Pasword:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+      />
+      <br />
+      <br />
+      <input type="radio" name="gender" value="male" />M
+      <input type="radio" name="gender" value="female" />F
+      <br />
+      <br />
+      <label for="remember">Remember me</label>
+      <input type="checkbox" name="remember" id="remember" />
+      <br />
+      <br />
+      <select name="city">
+        <option value="Lviv">Lviv</option>
+        <option value="Kyiv">Kyiv</option>
+        <option value="Vinnica">Vinnica</option>
+      </select>
+      <br />
+      <br />
+      <label for="message">Message</label>
+      <textarea name="massage" id="message"></textarea>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
